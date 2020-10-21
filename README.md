@@ -17,7 +17,7 @@ We should gather the datasets from all groups. No cleaning is needed yet.
 
 ## Tasks
 
--Create a Trello
--Create the Github
--Collect the data
+- Create a Trello
+- Create the Github
+- Collect the data
 
