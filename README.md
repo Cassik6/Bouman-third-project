@@ -43,3 +43,14 @@ As our main dataset was composed of small datasets really similar, we had a lot 
 - Create the Github (done)
 - Collect the data
 
+
+Which variable is the target ?
+How many rows and columns ?
+What is the correlation between variable/target ? (Why?)
+What is the correlation between the variables/variables ? (Why?)
+Which variables have the greatest influence on the target ?
+Which variables have the least influence on the target ?
+How many qualitative and quantitative variable is there ? How would you transform these values into numerical values ?
+Percentage of missing values per column ?
+
+
