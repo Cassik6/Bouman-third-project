@@ -31,20 +31,29 @@ Once each group had a complete dataset, the project leaders had to meet in order
 
 The Data Cleaning was definitely the biggest challenge for this project. And to accomplish the other steps and reach our final goal, we had to make sure we had a proper dataset to work on. Therefore, the Project Manager allocated most of the workforce to this single task.
 
+We decided to remove the "source 2" from the dataset as most of those datas were inconsistant. With many properties from cities out of Belgium.
+
 We devided the data cleaning in three main parts :
 
 #### a) Suppressing duplicates :
 As our main dataset was composed of small datasets really similar, we had a lot of overlapping data's. In other words, duplicates.
-************EXPLAIN HOW YOOU DID IT **************
+
+- As all the datasets centralized were from Immoweb, our strategy to get rid of most of the duplicates, was to use the Immoweb ID of the properties. When there was an URL, we extracted the ID from the URL itself so we had consistant values in our "ID" column. After which, we deleted all the rows without any ID.
+- Afterwwards, we used the dropduplicate function in Pandas to make sure all our id's were unique.
 
 #### b) Adjusting formats : 
 Once we cleared as many duplicates as possible, we had to make sure the format of our values in a single column were all similar to be able to use them correctly later on in the project.
-************EXPLAIN HOW YOOU DID IT **************
+For most columns, we had values of different types (string, boolean, numerical). For each column, we made sure we had only one type left and all formatted in the same way (integers or float, lower case or capital letters, etc).
 
 #### c) Trimming : 
 After the first two tasks, we could still notice many data's that would not make sense or that after some research would reveal some duplicates left in the dataset.
 As most of the cleaning was already done and this task is really time consuming we decided to keep this task for the end of the project if we had some time left.
-************EXPLAIN HOW YOOU DID IT **************
+Here is a summary of what we did for each columns :
+- Prices : We removed all prices under 100 euros. As all the really low values were most likely wrong and would misleead our results.
+- Locality : As many values were missing in localities and the format were too differents to be treated, we decided that it would be sufficient to keep the postcode column withoout localities.
+- 
+
+We also decided to take 
 
  
 ### 2. Data Analysis
