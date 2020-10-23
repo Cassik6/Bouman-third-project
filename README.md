@@ -40,10 +40,12 @@ As our main dataset was composed of small datasets really similar, we had a lot 
 
 - As all the datasets centralized were from Immoweb, our strategy to get rid of most of the duplicates, was to use the Immoweb ID of the properties. When there was an URL, we extracted the ID from the URL itself so we had consistant values in our "ID" column. After which, we deleted all the rows without any ID.
 - Afterwwards, we used the dropduplicate function in Pandas to make sure all our id's were unique.
+- We noticed that even after this we had some duplicates, we then used a grouped primary key to delete those (price, estate type, province, postcode, number of rooms , garden, surface, land surface). We are aware we might have lost some data in the process, but it is largely minimized compared to the impact the real duplicates would have had.
 
 #### b) Adjusting formats : 
 Once we cleared as many duplicates as possible, we had to make sure the format of our values in a single column were all similar to be able to use them correctly later on in the project.
 For most columns, we had values of different types (string, boolean, numerical). For each column, we made sure we had only one type left and all formatted in the same way (integers or float, lower case or capital letters, etc).
+Another challenge was to identify null values as every dataset had different ways to express them. Finally we managed to isolate them and threat them accordingly.
 
 #### c) Trimming : 
 After the first two tasks, we could still notice many data's that would not make sense or that after some research would reveal some duplicates left in the dataset.
@@ -51,10 +53,8 @@ As most of the cleaning was already done and this task is really time consuming 
 Here is a summary of what we did for each columns :
 - Prices : We removed all prices under 100 euros. As all the really low values were most likely wrong and would misleead our results.
 - Locality : As many values were missing in localities and the format were too differents to be treated, we decided that it would be sufficient to keep the postcode column withoout localities.
-- 
-
-We also decided to take 
-
+- Surface : since this will be part of an important metric we needed to make sure that this data was accurate. When using the surface we decided to ignore rows with less than 20 m² as surface value.
+- also all data without with enexploitable values and that could impact results of our analysis was discarded. 
  
 ### 2. Data Analysis
 
