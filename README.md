@@ -82,6 +82,8 @@ We have looked in:
 - The 5 most expensive properties by average prices for each postcode
 - The 5 least expensive properties by average prices for each postcode
 - The average price by province
+- The average price /m² by province
+- The average price /m² by region
 - The average price by each types for each provinces
 - The count distribution of selling properties for each provinces
 - The distribution of sellig properties by region
@@ -93,15 +95,12 @@ We have looked in:
 
 
 
-
-
-
 ## Used Libraries
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-from collections import Counter
-%matplotlib inline
-import seaborn as sns
+- import pandas as pd
+- import numpy as np
+- import matplotlib.pyplot as plt
+- from collections import Counter
+- %matplotlib inline
+- import seaborn as sns
 
 
