@@ -51,7 +51,7 @@ Another challenge was to identify null values as every dataset had different way
 After the first two tasks, we could still notice many data's that would not make sense or that after some research would reveal some duplicates left in the dataset.
 As most of the cleaning was already done and this task is really time consuming we decided to keep this task for the end of the project if we had some time left.
 Here is a summary of what we did for each columns :
-- Prices : We removed all prices under 100 euros. As all the really low values were most likely wrong and would misleead our results.
+- Prices : We removed all prices under 10 000 euros. As all the really low values were most likely wrong and would misleead our results.
 - Locality : As many values were missing in localities and the format were too differents to be treated, we decided that it would be sufficient to keep the postcode column withoout localities.
 - Surface : since this will be part of an important metric we needed to make sure that this data was accurate. When using the surface we decided to ignore rows with less than 20 m² as surface value.
 - also all data without with enexploitable values and that could impact results of our analysis was discarded. 
