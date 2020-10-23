@@ -67,4 +67,4 @@ Questions:
 - How many qualitative and quantitative variable is there ? How would you transform these values into numerical values ?
 - Percentage of missing values per column ?
 
-### Data Interpretation
+### 3. Data Interpretation
