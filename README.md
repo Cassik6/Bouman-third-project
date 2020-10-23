@@ -4,7 +4,7 @@
 
 The main tasks for this project is to complete an analysis and interpretation of our main dataset.
 Those tasks are done in order to have everything required to achieve the goal of this project : predict prices on Belgium's Real Estate sales.
-As a optional goal, based on our work, we had to estimate which machine learning would be the most suited to solve our problematic. 
+As a optional goal, based on our work, we had to estimate which machine learning model would be the most suited to solve our problematic. 
 
 ## Participants
 
