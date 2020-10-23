@@ -51,7 +51,7 @@ Another challenge was to identify null values as every dataset had different way
 After the first two tasks, we could still notice many data's that would not make sense or that after some research would reveal some duplicates left in the dataset.
 As most of the cleaning was already done and this task is really time consuming we decided to keep this task for the end of the project if we had some time left.
 Here is a summary of what we did for each columns :
-- Prices : We removed all prices under 100 euros. As all the really low values were most likely wrong and would misleead our results.
+- Prices : We removed all prices under 10 000 euros. As all the really low values were most likely wrong and would misleead our results.
 - Locality : As many values were missing in localities and the format were too differents to be treated, we decided that it would be sufficient to keep the postcode column withoout localities.
 - Surface : since this will be part of an important metric we needed to make sure that this data was accurate. When using the surface we decided to ignore rows with less than 20 m² as surface value.
 - also all data without with enexploitable values and that could impact results of our analysis was discarded. 
@@ -77,3 +77,30 @@ Questions:
 - Percentage of missing values per column ?
 
 ### 3. Data Interpretation
+
+We have looked in:
+- The 5 most expensive properties by average prices for each postcode
+- The 5 least expensive properties by average prices for each postcode
+- The average price by province
+- The average price /m² by province
+- The average price /m² by region
+- The average price by each types for each provinces
+- The count distribution of selling properties for each provinces
+- The distribution of sellig properties by region
+- The avrage price of houses and apartments by province
+- Total number of selling houses and apartments by province
+- The avrage price of houses and apartments by region
+- Total number of selling houses and apartments by region
+
+
+
+
+### Used Libraries
+- import pandas as pd
+- import numpy as np
+- import matplotlib.pyplot as plt
+- from collections import Counter
+- %matplotlib inline
+- import seaborn as sns
+
+
