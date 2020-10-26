@@ -76,7 +76,20 @@ Questions:
 - Which variables have the greatest influence on the target ? Number of rooms
 - Which variables have the least influence on the target ? Terace area
 - How many qualitative and quantitative variable is there ? How would you transform these values into numerical values ?
+
 - Percentage of missing values per column ?
+
+  - area :				19%
+  - open_fire :			4%
+  - terrace :				7%
+  - terrace_area :		7%
+  - garden :				6%
+  - garden_area :			25%
+  - land_surface :		29%
+  - land_plot_surface :	13%
+  - facades_number :		8%
+  - swimming_pool_has :	4%
+  - building_state :		43%
 
 ### 3. Data Interpretation
 
