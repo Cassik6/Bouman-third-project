@@ -116,4 +116,14 @@ plt.title('Regions: House average price per m²')
 plt.ylabel('values')
 plt.show()
 
+#linear regression line in a scatter graph for 2 badroom apartment in Brussels with out garden and terrace
+import matplotlib.ticker as mtick
+g = sns.lmplot(x="area", y='price', data=df.loc[(df["price"]>500)& 
+                                            (df["area"]<3000) & 
+                                            (df["garden"] == False)&
+                                            (df["terrace"]==False)&
+                                            (df["Province"] == "Brussels")&
+                                            (df["rooms_number"] == 2)&
+                                            (df["property_subtype"] == "APARTMENT")])
+plt.title("2-badroom-apartments w/o terrace and gareden in Brussels")
 
