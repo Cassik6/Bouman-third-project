@@ -68,11 +68,11 @@ To make a clear answer to the following questions we made a distinction between 
 Questions:
 
 - Which variable is the target ? The price is the key element in our analysis as we had to predict prices we had to analysis its variation depending on the different variables
-- How many rows and columns ?************TO BE ADDED AT THE LAST MINUTE **************
-- What is the correlation between variable/target ? (Why?) 
-- What is the correlation between the variables/variables ? (Why?) 
-- Which variables have the greatest influence on the target ?
-- Which variables have the least influence on the target ?
+- How many rows and columns ? 23807 rows and 22 Columns
+- What is the correlation between variable/target ? (Why?) There is a minor correlation between the target and variables. We see two main variables having a higher correlation : Rooms Number & Area
+- What is the correlation between the variables/variables ? (Why?) In general, we can observe that the correlation between variables is really low.
+- Which variables have the greatest influence on the target ? Number of rooms
+- Which variables have the least influence on the target ? Terace area
 - How many qualitative and quantitative variable is there ? How would you transform these values into numerical values ?
 - Percentage of missing values per column ?
 
