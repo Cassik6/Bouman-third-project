@@ -96,6 +96,9 @@ We have looked in:
 
 
 
+### 4. AI Modeling
+
+As we have try to understand what conditions are effective on the prices of properties we suggest a sort of combination of Decision Making Tree and Linear Regression models. We eliminated the conditions like number of rooms, terace and garden existance, province and the type of the property of the inputs with DMT modeling. After that, the LRM is suitable to see the relationships between the area and price. For other relationships between different components of the inputs should examine independently. Other AI models would suitable for them.
 
 ### Used Libraries
 - import pandas as pd
